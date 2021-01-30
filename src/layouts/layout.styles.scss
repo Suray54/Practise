@@ -1,0 +1,62 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  text-decoration: none;
+  list-style: none;
+}
+html,
+body {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+:root {
+  --background-dark: #bdbdbd;
+  --background-color: #fafafa;
+  --background: #eee;
+
+  --color-grey: grey;
+  --color-dark-grey: #cfcfcf;
+  --color-light-grey: #ececec;
+
+  --color-white: #fff;
+  --off-white: #f7f7f7;
+
+  --color-black: #000;
+
+  --color-write: #333;
+  --color-write-light: #646464;
+
+  --shadow-color: rgba(0, 0, 0, 0.8);
+  --light-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --dark-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+
+  --secondary: #4db3ce;
+  --primary: #203238;
+
+  --transparent-main: transparent;
+
+  --orange-main: #ce4918;
+  --green-main: #00a850;
+  --pink-main: #ed0076;
+  --purple-main: #878ab7;
+  --yellow-main: #fdcb0f;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.space {
+  margin-top: 80px;
+  height: 40vh;
+}
