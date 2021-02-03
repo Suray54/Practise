@@ -18,10 +18,10 @@ function App() {
       <Layouts>
         <Switch>
           <Route exact path="/">
-            {Homepage}
+            <Homepage />
           </Route>
           <Route exact path="/pokedex">
-            {Pokedex}
+            <Pokedex />
           </Route>
           <Route component={PageNotfound} />
         </Switch>
