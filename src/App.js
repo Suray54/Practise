@@ -9,15 +9,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import ScrollToTop from "./ScrollToTop";
 import Homepage from "./pages/homepage/homepage.components";
 import PageNotfound from "./pages/404/404.components";
+import Layouts from "./layouts/layouts.components";
 
 function App() {
   return (
     <>
       <ScrollToTop>
-        <Switch>
-          <Route exact path="/" component={Homepage} />
-          <Route component={PageNotfound} />
-        </Switch>
+        <Layouts>
+          <Switch>
+            <Route exact path="/" component={Homepage} />
+            <Route component={PageNotfound} />
+          </Switch>
+        </Layouts>
       </ScrollToTop>
     </>
   );

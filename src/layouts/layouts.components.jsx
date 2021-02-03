@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./layout.styles.scss";
+import "./layouts.styles.scss";
 
 import Navigation from "./nav/nav.components";
 import Footer from "./footer/footer.components";
