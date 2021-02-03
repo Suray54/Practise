@@ -30,21 +30,6 @@ export class Navigation extends Component {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about">
-                  About
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/services">
-                  Services
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/portfolio">
-                  Portfolio
-                </Link>
-              </li>
-              <li className="nav-item">
                 <Link className="nav-link" to="/contact">
                   Contact
                 </Link>
