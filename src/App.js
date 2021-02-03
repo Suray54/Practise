@@ -17,8 +17,12 @@ function App() {
     <ScrollToTop>
       <Layouts>
         <Switch>
-          <Route exact path="/" component={Homepage} />
-          <Route exact path="/pokedex" component={Pokedex} />
+          <Route exact path="/">
+            {Homepage}
+          </Route>
+          <Route exact path="/pokedex">
+            {Pokedex}
+          </Route>
           <Route component={PageNotfound} />
         </Switch>
       </Layouts>
