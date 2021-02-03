@@ -14,15 +14,17 @@ import Homepage from "./pages/homepage/homepage.components";
 
 function App() {
   return (
-    <ScrollToTop>
-      <Layouts>
-        <Switch>
-          <Route path="/" component={Homepage} exact />
-          <Route path="/pokedex" component={Pokedex} exact />
-          <Route component={PageNotfound} />
-        </Switch>
-      </Layouts>
-    </ScrollToTop>
+    <>
+      <ScrollToTop>
+        <Layouts>
+          <Switch>
+            <Route path="/" component={Homepage} exact />
+            <Route path="/pokedex" component={Pokedex} exact />
+            <Route component={PageNotfound} />
+          </Switch>
+        </Layouts>
+      </ScrollToTop>
+    </>
   );
 }
 
