@@ -10,16 +10,19 @@ import Layouts from "./layouts/layout.components";
 import PageNotfound from "./pages/404/404.components";
 import Pokedex from "./pages/pokedex/pokedex.components";
 import Homepage from "./pages/homepage/homepage.components";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
-    <Layouts>
-      <Switch>
-        <Route exact path="/" component={Homepage} />
-        <Route exact path="/pokedex" component={Pokedex} />
-        <Route component={PageNotfound} />
-      </Switch>
-    </Layouts>
+    <ScrollToTop>
+      <Layouts>
+        <Switch>
+          <Route exact path="/" component={Homepage} />
+          <Route exact path="/pokedex" component={Pokedex} />
+          <Route component={PageNotfound} />
+        </Switch>
+      </Layouts>
+    </ScrollToTop>
   );
 }
 

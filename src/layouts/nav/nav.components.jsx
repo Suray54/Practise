@@ -3,7 +3,6 @@ import React, { Component } from "react";
 
 // import "./nav.js";
 import "./nav.styles.scss";
-
 import logo from "./../../assets/logowhite.ico";
 
 export class Navigation extends Component {

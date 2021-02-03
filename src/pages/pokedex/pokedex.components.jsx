@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Layouts from "../../layouts/layout.components";
 
 export default class Pokedex extends Component {
   static defaultProps = {

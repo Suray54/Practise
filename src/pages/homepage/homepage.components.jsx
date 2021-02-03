@@ -1,5 +1,6 @@
 import React from "react";
-import Layouts from "../../layouts/layout.components";
+
+import "./homepage.styles.scss";
 
 const Homepage = () => {
   return (
