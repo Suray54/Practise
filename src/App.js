@@ -7,9 +7,9 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import ScrollToTop from "./ScrollToTop";
-import Homepage from "./pages/homepage/homepage.components";
-import PageNotfound from "./pages/404/404.components";
 import Layouts from "./layouts/layouts.components";
+import PageNotfound from "./pages/404/404.components";
+import Homepage from "./pages/homepage/homepage.components";
 
 function App() {
   return (
