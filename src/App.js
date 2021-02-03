@@ -6,17 +6,20 @@ import "popper.js/dist/popper.min";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import Layouts from "./layouts/layout.components";
 import PageNotfound from "./pages/404/404.components";
 import Pokedex from "./pages/pokedex/pokedex.components";
 import Homepage from "./pages/homepage/homepage.components";
 
 function App() {
   return (
-    <Switch>
-      <Route exact path="/" component={Homepage} />
-      <Route exact path="/pokedex" component={Pokedex} />
-      <Route component={PageNotfound} />
-    </Switch>
+    <Layouts>
+      <Switch>
+        <Route exact path="/" component={Homepage} />
+        <Route exact path="/pokedex" component={Pokedex} />
+        <Route component={PageNotfound} />
+      </Switch>
+    </Layouts>
   );
 }
 

@@ -47,14 +47,14 @@ export default class Pokedex extends Component {
     //   hand1.push(randIdx);
     // }
     return (
-      <Layouts>
+      <>
         <div className="container">
           <div className="row">
             <Pokecard pokemon={hand1} />
             <Pokecard pokemon={hand2} />
           </div>
         </div>
-      </Layouts>
+      </>
     );
   }
 }
