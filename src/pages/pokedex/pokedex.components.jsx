@@ -80,7 +80,7 @@ const Pokecard = (props) => {
   let imgSrc = `${POKE_API}${padToThree(props.id)}.png`;
   console.log(imgSrc);
   return (
-    <div className="pokecard-main col-md-3">
+    <div className="pokecard-main col-lg-3 col-md-6">
       <div className="pokecard-main__space">
         <h3>{props.name}</h3>
         <img src={imgSrc} alt={props.name} />
