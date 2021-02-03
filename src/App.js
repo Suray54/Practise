@@ -18,7 +18,7 @@ function App() {
       <Layouts>
         <Switch>
           <Route exact path="/" component={Homepage} />
-          <Route exact path="/pokedex" component={Pokedex} />
+          <Route path="/pokedex" component={Pokedex} />
           <Route component={PageNotfound} />
         </Switch>
       </Layouts>
