@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
 import React, { Component } from "react";
 
-import { LINK } from "../link-constant/link-constant";
-
 // import "./nav.js";
 import "./nav.styles.scss";
 import logo from "./../../assets/logowhite.ico";
+import { LINK } from "../../constant/link-constant/link-constant";
 
 export class Navigation extends Component {
   render() {
