@@ -1,31 +1,31 @@
 *,
 *::after,
 *::before {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  list-style: none;
   box-sizing: inherit;
   text-decoration: none;
-  list-style: none;
 }
 html,
 body {
   font-size: 62.5%;
+  position: relative;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  position: relative;
 }
 
 :root {
+  --background: #eee;
   --background-dark: #bdbdbd;
   --background-color: #fafafa;
-  --background: #eee;
 
   --color-grey: grey;
   --color-dark-grey: #cfcfcf;
   --color-light-grey: #ececec;
 
-  --color-white: #fff;
   --off-white: #f7f7f7;
+  --color-white: #fff;
 
   --color-black: #000;
 
@@ -36,16 +36,16 @@ body {
   --light-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --dark-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 
-  --secondary: #4db3ce;
   --primary: #203238;
+  --secondary: #4db3ce;
 
-  --transparent-main: transparent;
-
-  --orange-main: #ce4918;
-  --green-main: #00a850;
   --pink-main: #ed0076;
+  --green-main: #00a850;
+  --orange-main: #ce4918;
   --purple-main: #878ab7;
   --yellow-main: #fdcb0f;
+  --orangered-main: orangered;
+  --transparent-main: transparent;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
@@ -57,6 +57,17 @@ body {
 }
 
 .space {
-  margin-top: 90px;
+  margin-top: 70px;
   min-height: 60vh;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-padding {
+  margin: 0;
+  padding: 0;
 }

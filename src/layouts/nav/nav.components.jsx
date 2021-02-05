@@ -4,7 +4,7 @@ import React, { Component } from "react";
 // import "./nav.js";
 import "./nav.styles.scss";
 import logo from "./../../assets/logowhite.ico";
-import { LINK } from "../../constant/link-constant/link-constant";
+import { LINK } from "../../constant/link-constant";
 
 export class Navigation extends Component {
   render() {

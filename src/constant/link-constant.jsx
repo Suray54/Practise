@@ -1,10 +1,10 @@
 export const LINK = [
   {
     to: "/",
-    linkname: "homepage",
+    linkname: "Homepage",
   },
   {
     to: "/pokedex",
-    linkname: "pokedex",
+    linkname: "Pokedex",
   },
 ];
