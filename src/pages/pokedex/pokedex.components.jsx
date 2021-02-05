@@ -37,7 +37,7 @@ export default class Pokedex extends Component {
 
       hand1.push(randPokemon);
     }
-    console.log(hand1);
+    // console.log(hand1);
     // console.log(this.state.pokemon);
     // const potato = this.state.pokemon[1];
     // console.log("potato", potato);
@@ -78,7 +78,7 @@ const POKE_API = "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/";
 let padToThree = (number) => (number <= 999 ? `00${number}`.slice(-3) : number);
 const Pokecard = (props) => {
   let imgSrc = `${POKE_API}${padToThree(props.id)}.png`;
-  console.log(imgSrc);
+  // console.log(imgSrc);
   return (
     <div className="pokecard-main col-lg-3 col-md-6">
       <div className="pokecard-main__space">

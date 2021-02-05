@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import React, { Component } from "react";
 
+import { LINK } from "../link-constant/link-constant";
+
 // import "./nav.js";
 import "./nav.styles.scss";
 import logo from "./../../assets/logowhite.ico";
@@ -23,7 +25,14 @@ export class Navigation extends Component {
           </button>
           <div className="collapse navbar-collapse" id="collapsibleNavbar">
             <ul className="navbar-nav  ml-auto">
-              <li className="nav-item">
+              {LINK.map((link, index) => (
+                <li key={index} className="nav-item">
+                  <Link className="nav-link" to={link.to}>
+                    {link.linkname}
+                  </Link>
+                </li>
+              ))}
+              {/* <li className="nav-item">
                 <Link className="nav-link" to="/">
                   Home
                 </Link>
@@ -32,7 +41,7 @@ export class Navigation extends Component {
                 <Link className="nav-link" to="/pokedex">
                   Pokedex
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </nav>
