@@ -22,9 +22,9 @@
       color: var(--color-light-grey);
       border-bottom: 0.5px solid var(--color-light-grey);
       &:hover {
+        border: none;
         text-decoration: none;
         color: var(--background);
-        border: none;
       }
     }
   }
