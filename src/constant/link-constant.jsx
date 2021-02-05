@@ -4,7 +4,7 @@ export const LINK = [
     linkname: "Homepage",
   },
   {
-    to: "/contact",
-    linkname: "Contact",
+    to: "/about",
+    linkname: "About",
   },
 ];
