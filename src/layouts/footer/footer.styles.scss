@@ -1,15 +1,21 @@
 .footer {
-  background-color: var(--primary);
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+
+  padding: 60px 0;
   font-size: 1.6rem;
   line-height: 30px;
   color: var(--color-grey);
+  background-color: var(--primary);
 
   &__end {
-    margin: 80px 0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
     a {
       margin-left: 5px;
       text-decoration: none;
@@ -19,6 +25,32 @@
         text-decoration: none;
         color: var(--background);
         border: none;
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+
+    &-1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      border-radius: 50%;
+
+      text-decoration: none;
+      color: var(--color-white);
+      border: 1px solid var(--color-white);
+      &:hover {
+        color: var(--secondary);
+        background: var(--color-white);
+      }
+      &:not(:first-child) {
+        margin-left: 5px;
       }
     }
   }
