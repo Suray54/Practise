@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import React, { Component } from "react";
 
-import { LINK } from "../../constant/link-constant";
+import { LINK } from "../../constant/link-constant.js";
 
 // import "./nav.js";
 import "./nav.styles.scss";
@@ -27,8 +27,8 @@ export class Navigation extends Component {
             <ul className="navbar-nav  ml-auto">
               {LINK.map((link, index) => (
                 <li key={index} className="nav-item">
-                  <Link className="nav-link" to={link.to}>
-                    {link.linkname}
+                  <Link className="nav-link" to={link.path}>
+                    {link.title}
                   </Link>
                 </li>
               ))}

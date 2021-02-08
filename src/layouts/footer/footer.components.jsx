@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import "./footer.styles.scss";
-import { SOCIAL } from "./../../constant/social-constant";
+import { SOCIAL } from "./../../constant/social-constant.js";
 
 export class Footer extends Component {
   render() {
@@ -18,7 +18,7 @@ export class Footer extends Component {
             <a
               key={index}
               rel="nofollow"
-              href={social.href}
+              href={social.link}
               className="footer__social-1"
             >
               {social.icon}
