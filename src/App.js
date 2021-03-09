@@ -6,9 +6,9 @@ import "popper.js/dist/popper.min";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import ScrollToTop from "./ScrollToTop";
+import ScrollToTop from "./utils/ScrollToTop";
 import Layouts from "./layouts/layout.components";
-import PageNotfound from "./pages/404/404.components";
+import PageNotfound from "./components/common/404/404.components";
 import Pokedex from "./pages/pokedex/pokedex.components";
 import Homepage from "./pages/homepage/homepage.components";
 
