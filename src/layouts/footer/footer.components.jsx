@@ -10,14 +10,21 @@ export class Footer extends Component {
         <div className="footer__end mb-4">
           <p>
             Copyright &#169; all rights reserved | designed & developed by
-            <a href="https://suray54.github.io/Rezume/">Suranjan rai</a>
+            <a
+              href="https://suray54.github.io/Rezume/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              Suranjan rai
+            </a>
           </p>
         </div>
         <div className="footer__social">
           {SOCIAL.map((social, index) => (
             <a
+              target="_blank"
               key={index}
-              rel="nofollow"
+              rel="noopener noreferrer nofollow"
               href={social.link}
               className="footer__social-1"
             >
