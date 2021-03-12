@@ -7,7 +7,7 @@ import "popper.js/dist/popper.min";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import PageNotfound from "./pages/404/404.components";
+import PageNotfound from "./components/404/404.components";
 import Dashboard from "./components/dashboard";
 import AddProject from "./components/Project/add-project";
 import Header from "./components/layouts/header";

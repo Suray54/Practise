@@ -1,5 +1,10 @@
 import React, { Component } from "react";
 
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+
+import { createProject } from "../../redux/actions/project-actions";
+
 class AddProject extends Component {
   constructor() {
     super();
@@ -18,6 +23,7 @@ class AddProject extends Component {
   };
 
   onSubmit = (e) => {
+    const { createProject } = this.props;
     e.preventDefault();
     const newProject = {
       projectName: this.state.projectName,
@@ -26,7 +32,7 @@ class AddProject extends Component {
       start_date: this.state.start_date,
       end_date: this.state.end_date,
     };
-
+    createProject(newProject, this.props.history);
     console.log(newProject);
   };
 
@@ -115,4 +121,12 @@ class AddProject extends Component {
   }
 }
 
-export default AddProject;
+AddProject.propTypes = {
+  createProject: PropTypes.func.isRequired,
+};
+
+const mapDispatchToProps = (dispatch) => ({
+  createProject: (project, history) =>
+    dispatch(createProject(project, history)),
+});
+export default connect(null, mapDispatchToProps)(AddProject);
