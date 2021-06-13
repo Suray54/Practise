@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
 import "./git.styles.scss";
+
 import { getUserDetail, getUserFailure } from "../../redux/github/git.selector";
 
 const GitList = (props) => {

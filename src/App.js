@@ -6,6 +6,8 @@ import "popper.js/dist/popper.min";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import { ToastContainer } from "react-toastify";
+
 import ScrollToTop from "./utils/ScrollToTop";
 import Layouts from "./layouts/layout.components";
 import Pokedex from "./pages/pokedex/pokedex.components";
@@ -26,6 +28,7 @@ function App() {
 
             <Route component={PageNotfound} />
           </Switch>
+          <ToastContainer autoClose={3500} />
         </Layouts>
       </ScrollToTop>
     </>
