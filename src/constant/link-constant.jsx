@@ -7,4 +7,8 @@ export const LINK = [
     to: "/pokedex",
     linkname: "Pokedex",
   },
+  {
+    to: "/git",
+    linkname: "Github",
+  },
 ];
