@@ -17,7 +17,7 @@ export const InfoMessage = (props) => {
   const { message } = props;
 
   return (
-    <div className="d-flex">
+    <div className="d-flex align-items-center">
       <i class="fa fa-check" />
       <span className="pl-2"> {message}</span>
     </div>
@@ -28,7 +28,7 @@ export const ErrorMessage = (props) => {
   const { message } = props;
 
   return (
-    <div className="d-flex">
+    <div className="d-flex align-items-center">
       <i class="fa fa-times" />
       <span className="pl-2"> {message}</span>
     </div>
@@ -39,14 +39,14 @@ export const WarnMessage = (props) => {
   const { message } = props;
 
   return (
-    <div className="d-flex">
+    <div className="d-flex align-items-center">
       <i class="fa fa-times" />
       <span className="pl-2"> {message}</span>
     </div>
   );
 };
 
-export default {
+const toasts = {
   success: function (messasge) {
     return toast.success(<SuccessMessage message={messasge} />);
   },
@@ -63,3 +63,5 @@ export default {
     return toast.warn(<WarnMessage message={messasge} />);
   },
 };
+
+export default toasts;
