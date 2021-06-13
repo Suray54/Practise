@@ -7,7 +7,7 @@ import { LINK } from "../../constant/link-constant";
 const Homepage = () => {
   return (
     <>
-      <div className="homepage ">
+      <div className="homepage">
         <div className="row flex-center">
           {LINK.map((link, index) => (
             <div key={index} className="col-lg-3 col-md-6  no-padding">

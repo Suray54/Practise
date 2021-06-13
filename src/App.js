@@ -11,6 +11,7 @@ import Layouts from "./layouts/layout.components";
 import PageNotfound from "./pages/404/404.components";
 import Pokedex from "./pages/pokedex/pokedex.components";
 import Homepage from "./pages/homepage/homepage.components";
+import GitSearch from "./pages/github/github-search.component";
 
 function App() {
   return (
@@ -19,7 +20,9 @@ function App() {
         <Layouts>
           <Switch>
             <Route path="/" component={Homepage} exact />
+            <Route path="/git" component={GitSearch} />
             <Route path="/pokedex" component={Pokedex} exact />
+
             <Route component={PageNotfound} />
           </Switch>
         </Layouts>
