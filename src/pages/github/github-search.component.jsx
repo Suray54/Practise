@@ -49,11 +49,11 @@ export class GitSearch extends Component {
     return (
       <div className="github">
         <form onSubmit={this.handleSubmit}>
-          <div className="input-container">
+          <div className="mb-2">
             <input
               name="user"
               type="text"
-              placeholder="user name"
+              placeholder="Enter username"
               onChange={this.handleChange}
               value={this.state.user}
               autoComplete="off"

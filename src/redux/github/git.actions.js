@@ -30,7 +30,7 @@ export const fetchUser = (user) => async (dispatch) => {
       if (response.status >= 200 && response.status <= 299) {
         return response.json();
       } else {
-        throw Error("could not find the user");
+        throw Error("Could not find the user...");
       }
     })
     .then((user) => {
