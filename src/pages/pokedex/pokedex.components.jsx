@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import React, { Component } from "react";
 
 import "./pokedex.styles.scss";
@@ -55,6 +56,7 @@ export default class Pokedex extends Component {
 
     return (
       <>
+        <Helmet title="Pokedex" />
         <div className="container">
           <h1 className="mt-4">First Hand</h1>
           <div className="row">

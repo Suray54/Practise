@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -11,6 +12,7 @@ const Homepage = () => {
 
   return (
     <>
+      <Helmet title="My Homepage" />
       <div className="homepage">
         <LanguageSelector />
         <div className="row flex-center">

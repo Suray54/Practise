@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { connect } from "react-redux";
 import React, { Component } from "react";
 
@@ -48,6 +49,7 @@ export class GitSearch extends Component {
   render() {
     return (
       <div className="github">
+        <Helmet title="Github-Search" />
         <form onSubmit={this.handleSubmit}>
           <div className="mb-2">
             <input
