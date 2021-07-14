@@ -7,10 +7,12 @@ export class Footer extends Component {
     return (
       <div className="footer">
         <div className="footer__end">
-          <p>
-            Copyright &#169; all rights reserved | designed & developed by
-            <a href="https://suray54.github.io/Rezume/">Suranjan rai</a>
-          </p>
+          <div className="container">
+            <p>
+              Copyright &#169; all rights reserved | designed & developed by
+              <a href="https://suray54.github.io/Rezume/">Suranjan rai</a>
+            </p>
+          </div>
         </div>
       </div>
     );

@@ -9,8 +9,8 @@ import { LINK } from "../../constant/link-constant";
 export class Navigation extends Component {
   render() {
     return (
-      <div>
-        <nav className="navbar navbar-expand-md fixed-top">
+      <nav className="navbar navbar-expand-md fixed-top">
+        <div className="container">
           <Link className="navbar-brand" to="/">
             <img src={logo} alt="logo" />
           </Link>
@@ -43,8 +43,8 @@ export class Navigation extends Component {
               </li> */}
             </ul>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     );
   }
 }
