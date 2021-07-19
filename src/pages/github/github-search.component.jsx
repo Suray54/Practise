@@ -1,10 +1,10 @@
-import { Helmet } from "react-helmet";
 import { connect } from "react-redux";
 import React, { Component } from "react";
 
 import "./git.styles.scss";
 
 import GitList from "./github-list.component";
+import { PageHead } from "../../utils/page-head";
 import { TAB_MENU } from "../../constant/tab-constant";
 import { fetchUser } from "../../redux/github/git.actions";
 import TabMenu from "../../layouts/tab-menu/tab-menu.components";
@@ -52,7 +52,7 @@ export class GitSearch extends Component {
   render() {
     return (
       <div className="github">
-        <Helmet title="Github-Search" />
+        <PageHead title="Github-Search" />
         <TabMenu menus={TAB_MENU} activeTab={TAB_MENU.GITHUB} />
         <form onSubmit={this.handleSubmit}>
           <div className="mb-2">

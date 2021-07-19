@@ -1,8 +1,8 @@
-import { Helmet } from "react-helmet";
 import React, { Component } from "react";
 
 import "./pokedex.styles.scss";
 
+import { PageHead } from "../../utils/page-head";
 import { TAB_MENU } from "../../constant/tab-constant";
 import TabMenu from "../../layouts/tab-menu/tab-menu.components";
 
@@ -59,7 +59,7 @@ export default class Pokedex extends Component {
 
     return (
       <>
-        <Helmet title="Pokedex" />
+        <PageHead title="Pokedex" />
         <TabMenu menus={TAB_MENU} activeTab={TAB_MENU.POKEDEX} />
         <div className="container">
           <h1 className="mt-4">First Hand</h1>

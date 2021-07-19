@@ -1,9 +1,9 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import "./homepage.styles.scss";
+import { PageHead } from "../../utils/page-head";
 import { LINK } from "../../constant/link-constant";
 import { TAB_MENU } from "../../constant/tab-constant";
 import TabMenu from "../../layouts/tab-menu/tab-menu.components";
@@ -14,7 +14,7 @@ const Homepage = () => {
 
   return (
     <>
-      <Helmet title="My Homepage" />
+      <PageHead title="My Homepage" />
       <TabMenu menus={TAB_MENU} activeTab={TAB_MENU.HOMEPAGE} />
       <div className="homepage">
         <LanguageSelector />
