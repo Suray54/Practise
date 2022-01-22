@@ -1,0 +1,14 @@
+.pokecard-main {
+  padding: 20px;
+  &__space {
+    padding: 20px;
+    min-width: 200px;
+    box-shadow: var(--light-shadow);
+    img {
+      width: 100%;
+    }
+    &:hover {
+      box-shadow: var(--dark-shadow);
+    }
+  }
+}

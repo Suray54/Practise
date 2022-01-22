@@ -9,7 +9,7 @@ const Layouts = ({ children }) => {
   return (
     <>
       <Navigation />
-      <div className="space">{children}</div>
+      <div className="container space">{children}</div>
       {/* space because nav is fixed top */}
       <Footer />
     </>

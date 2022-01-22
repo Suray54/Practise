@@ -1,4 +1,6 @@
 .footer {
+  color: var(--color-white);
+  background-color: var(--primary);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -11,37 +13,9 @@
   background-color: var(--primary);
 
   &__end {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-
+    margin: 80px 0;
     a {
       margin-left: 5px;
-      text-decoration: none;
-      color: var(--color-light-grey);
-      border-bottom: 0.5px solid var(--color-light-grey);
-      &:hover {
-        border: none;
-        text-decoration: none;
-        color: var(--background);
-      }
-    }
-  }
-
-  &__social {
-    display: flex;
-
-    &-1 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      width: 50px;
-      height: 50px;
-      font-size: 24px;
-      border-radius: 50%;
-
       text-decoration: none;
       color: var(--color-white);
       border: 1px solid var(--color-white);

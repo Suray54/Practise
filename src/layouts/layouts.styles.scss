@@ -1,18 +1,18 @@
 *,
 *::after,
 *::before {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  list-style: none;
   box-sizing: inherit;
   text-decoration: none;
-  list-style: none;
 }
 html,
 body {
   font-size: 62.5%;
+  position: relative;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  position: relative;
 }
 
 :root {
@@ -39,13 +39,13 @@ body {
   --primary: #203238;
   --secondary: #4db3ce;
 
-  --transparent-main: transparent;
-
   --pink-main: #ed0076;
   --green-main: #00a850;
   --orange-main: #ce4918;
   --purple-main: #878ab7;
   --yellow-main: #fdcb0f;
+  --orangered-main: orangered;
+  --transparent-main: transparent;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
@@ -70,4 +70,27 @@ body {
 .no-padding {
   margin: 0;
   padding: 0;
+<<<<<<< HEAD:src/layouts/layout.styles.scss
+}
+
+.Toastify__toast {
+  border-radius: 4px !important;
+}
+
+.Toastify__toast--success {
+  background: #28a745 !important;
+}
+
+.Toastify__toast--warning {
+  background: #c58309 !important;
+}
+
+.Toastify__toast--error {
+  background: #b31f31 !important;
+}
+.Toastify__progress-bar {
+  height: 4px;
+  opacity: 0.1;
+=======
+>>>>>>> 00bec860e77813fff5eb21873450cf3f1fed4799:src/layouts/layouts.styles.scss
 }
