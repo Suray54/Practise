@@ -14,6 +14,19 @@ export class Footer extends Component {
             </p>
           </div>
         </div>
+        <div className="footer__social">
+          {SOCIAL.map((social, index) => (
+            <a
+              target="_blank"
+              key={index}
+              rel="noopener noreferrer nofollow"
+              href={social.link}
+              className="footer__social-1"
+            >
+              {social.icon}
+            </a>
+          ))}
+        </div>
       </div>
     );
   }
