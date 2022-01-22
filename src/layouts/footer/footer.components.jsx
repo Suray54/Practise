@@ -12,7 +12,11 @@ export class Footer extends Component {
             <p>
               &#169;{new Date().getFullYear().toString()} all rights reserved |
               designed & developed by
-              <a href="https://suray54.github.io/Rezume/" target="_blank">
+              <a
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                href="https://suray54.github.io/Rezume/"
+              >
                 Suranjan rai
               </a>
             </p>
