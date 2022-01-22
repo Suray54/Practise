@@ -9,7 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { ToastContainer } from "react-toastify";
 
 import ScrollToTop from "./utils/ScrollToTop";
-import Layouts from "./layouts/layout.components";
+import Layouts from "./layouts/layouts.components";
 import Pokedex from "./pages/pokedex/pokedex.components";
 import Homepage from "./pages/homepage/homepage.components";
 import GitSearch from "./pages/github/github-search.component";

@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import React, { Component, useState } from "react";
 
-import { LINK } from "../../constant/link-constant.js";
-
 // import "./nav.js";
 import "./nav.styles.scss";
 import logo from "./../../assets/logowhite.ico";
