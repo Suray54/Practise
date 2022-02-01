@@ -10,15 +10,13 @@ import "react-toastify/dist/ReactToastify.css";
 import Spinner from "./components/common/spinner/spinner.components";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Suspense fallback={<Spinner />}>
-      <Provider store={store}>
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
-      </Provider>
-    </Suspense>
-  </React.StrictMode>,
+  <Suspense fallback={<Spinner />}>
+    <Provider store={store}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </Provider>
+  </Suspense>,
 
   document.getElementById("root")
 );
