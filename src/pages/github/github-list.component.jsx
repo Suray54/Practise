@@ -1,10 +1,9 @@
 import React from "react";
 import { connect } from "react-redux";
-import { createStructuredSelector } from "reselect";
 
 import "./git.styles.scss";
 
-import { getUserDetail, getUserFailure } from "../../redux/github/git.selector";
+import { getReduxState } from "utils/common-helper";
 
 const GitList = (props) => {
   const { userDetail, error } = props;
@@ -21,9 +20,11 @@ const GitList = (props) => {
   );
 };
 
-const mapStateToProps = createStructuredSelector({
-  userDetail: getUserDetail,
-  error: getUserFailure,
-});
+const mapStateToProps = (state) => {
+  return {
+    userDetail: getReduxState(["git", "user"], state),
+    error: getReduxState(["git", "error"], state),
+  };
+};
 
 export default connect(mapStateToProps)(GitList);
