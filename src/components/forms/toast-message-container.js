@@ -7,7 +7,7 @@ export const SuccessMessage = (props) => {
 
   return (
     <div className="d-flex align-items-center">
-      <i class="fa fa-check" />
+      <i className="fa fa-check" />
       <span className="pl-2"> {message}</span>
     </div>
   );
@@ -18,7 +18,7 @@ export const InfoMessage = (props) => {
 
   return (
     <div className="d-flex align-items-center">
-      <i class="fa fa-check" />
+      <i className="fa fa-check" />
       <span className="pl-2"> {message}</span>
     </div>
   );
@@ -29,7 +29,7 @@ export const ErrorMessage = (props) => {
 
   return (
     <div className="d-flex align-items-center">
-      <i class="fa fa-times" />
+      <i className="fa fa-times" />
       <span className="pl-2"> {message}</span>
     </div>
   );
@@ -40,7 +40,7 @@ export const WarnMessage = (props) => {
 
   return (
     <div className="d-flex align-items-center">
-      <i class="fa fa-times" />
+      <i className="fa fa-times" />
       <span className="pl-2"> {message}</span>
     </div>
   );
